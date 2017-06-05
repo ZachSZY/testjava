@@ -13,6 +13,7 @@ public class PrimeFactorTest {
 
     @Test
     public void GIVEN_a_num_WHEN_prime_factor_THEN_compare_result(){
+        assertNull(PrimeFactor.primeFactor(1));
         assertEquals(Arrays.asList(2),PrimeFactor.primeFactor(2));
         assertEquals(Arrays.asList(3),PrimeFactor.primeFactor(3));
         assertEquals(Arrays.asList(2,2),PrimeFactor.primeFactor(4));
