@@ -38,14 +38,14 @@ public class TennisScoreTest {
     @Test
     public void GIVEN_different_greater_then_or_equal_to_three_WHEN_get_score_THEN_get_score_advanced() {
         assertEquals("Server Advanced",TennisScore.GetTennisScore(4,3));
-        assertEquals("Receiver Advanced",TennisScore.GetTennisScore(4,5));
+        assertEquals("Receiver Advanced",TennisScore.GetTennisScore(3,4));
 
     }
 
     @Test
     public void GIVEN_different_greater_then_or_equal_to_three_WHEN_get_score_THEN_get_score_win() {
         assertEquals("Receiver Win",TennisScore.GetTennisScore(2,4));
-        assertEquals("Server Win",TennisScore.GetTennisScore(5,3));
+        assertEquals("Server Win",TennisScore.GetTennisScore(4,1));
 
     }
 }
